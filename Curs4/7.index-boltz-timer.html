@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .boltz {
+        color: aqua;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Boltz - numere la dublu click</h1>
+    <script>
+      var body = document.getElementsByTagName("body")[0];
+
+      var i = 1;
+
+      function adauga_numar() {
+        console.log(i);
+        var paragraph = document.createElement("p");
+        // <p></p>
+        paragraph.innerHTML = i;
+        console.log(paragraph);
+        body.appendChild(paragraph);
+
+        if (i % 7 == 0 || i.toString().indexOf("7") !== -1) {
+          paragraph.innerHTML = "boltz";
+          paragraph.className = "boltz";
+        }
+        i++;
+      }
+
+      setInterval(adauga_numar, 1000);
+    </script>
+  </body>
+</html>

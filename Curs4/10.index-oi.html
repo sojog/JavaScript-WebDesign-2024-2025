@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        width: 100vw;
+        height: 100vw;
+        position: relative;
+      }
+      #oaie {
+        position: absolute;
+        font-size: 100px;
+        left: 0vw;
+        top: 0vh;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="oaie">🐑</p>
+
+    <script>
+      var left_indent = 0;
+      var semn = 1;
+      function muta_oaia() {
+        if (left_indent > 100) {
+             semn = -1;
+        }
+        if (left_indent < 0){
+            semn = 1;
+        }
+        left_indent = 0.1 * semn  + left_indent;
+        var oaie = document.getElementById("oaie");
+        oaie.style.left = left_indent + "vw";
+      }
+
+      setInterval(muta_oaia, 3);
+    </script>
+  </body>
+</html>

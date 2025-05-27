@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1></h1>
+    <ul>
+      <li>2</li>
+      <li>1</li>
+      <li>0</li>
+    </ul>
+
+    <script>
+      /* ARRAY -> [4] */
+      var salutari = ["Seara", "Ziua", "Dimineata"];
+
+      /* REFERINTA JS  = SELECTOR CSS */
+      var lista_de_li = document.getElementsByTagName("li");
+      console.log(lista_de_li);
+
+      for (let i = 0; i < lista_de_li.length; i++) {
+  
+        const element = lista_de_li[i];
+        element.innerHTML = salutari[2 - i];
+        console.log("i=", i, "element=", element);
+      }
+    </script>
+  </body>
+</html>

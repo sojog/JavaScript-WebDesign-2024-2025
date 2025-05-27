@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        border-color: black;
+        border-width: 2px;
+        border-style: solid;
+        height: min(20vw, 20vh);
+        border-radius: 50%;
+        aspect-ratio: 1/1;
+        margin: 30px;
+        text-align: center;
+        font-size: xx-large;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <script>
+        
+        
+        var i = 1;
+        
+        var alternare = 0;
+        var divuri = document.getElementsByTagName("div")
+        function adauga_numar() { 
+
+            var div_element = divuri[ alternare ]
+
+            alternare++
+            if (alternare == divuri.length) {
+                alternare = 0
+            }
+
+            console.log("alternare=", alternare);
+            console.log(i);
+
+            for (let i = 0; i < divuri.length; i++) {
+                divuri[i].innerHTML = "";
+                
+            }
+
+            div_element.innerHTML = i
+            if (i % 7 == 0 || i.toString().indexOf("7") !== -1) {
+                div_element.innerHTML = "boltz";
+                div_element.className = "boltz";
+                }
+             i++;
+        }
+        setInterval(adauga_numar, 1000);
+
+    </script>
+
+</body>
+</html>
