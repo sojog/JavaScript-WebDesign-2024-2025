@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Var, Const, Let</h1>
+    <script>
+      var variabila = 10;
+      console.log(variabila);
+      variabila += 10;
+      console.log(variabila);
+
+      const constanta = 200;
+      console.log(constanta);
+      // constanta += 22; // genereaza o valoare
+      console.log(constanta);
+
+      let varlet = 10;
+      console.log(varlet);
+
+      varlet += 123;
+      console.log(varlet);
+
+      var array = ["Mai", "Iunie", "Iulie"];
+      for (var j = 0; j < array.length; j++) {
+        console.log("j=", j);
+        const element = array[j];
+      }
+      console.log("j in afara..=", j);
+
+      for (let i = 0; i < array.length; i++) {
+        console.log("i=", i);
+        const element = array[i];
+      }
+      console.log("i in afara..=", i);
+    </script>
+  </body>
+</html>

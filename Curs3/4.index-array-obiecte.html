@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Array vs obiecte </h1>
+    
+    <script>
+     
+        /* Primitive - number, string, boolean */
+        console.log("typeof(10):", typeof(10));
+        
+        var greeting = "hello";
+        console.log("typeof(greeting):", typeof(greeting));
+
+        var conditie = true;
+        console.log("typeof(conditie):", typeof(conditie));
+
+
+        var array = ["Alb", "Negru", "Verde"]
+        console.log("typeof(array):", typeof(array));
+        console.log("typeof(array[0]):", typeof(array[0]));
+        console.log("lungimea array:", array.length);
+
+        var dictionar = {
+            "anotimp":"primavara",
+            "an": 2025
+        }
+        console.log("typeof(dictionar):", typeof(dictionar));
+        console.log("lungimea dictionar:", dictionar);
+        console.log(dictionar["anotimp"])
+        console.log(dictionar["an"])
+
+        console.log(dictionar[2025]) /* undefined */
+
+    </script>
+
+</body>
+</html>

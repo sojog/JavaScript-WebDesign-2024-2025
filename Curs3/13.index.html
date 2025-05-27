@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Vreau sa schimbati textul cu valoare specifica din tag</h1>
+
+    <div>Generic</div>
+    <p>Generic</p>
+    <span>Generic</span>
+
+    <script>
+      var texte = {
+        p: "Paragraph CUPRINZATOR",
+        div: "Div EXCENTRIC",
+        span: "Span INCREDIBIL",
+      };
+      var element = document.getElementsByTagName("div")[0];
+      element.innerHTML = texte["div"];
+
+      var element = document.getElementsByTagName("p")[0];
+      element.innerHTML = texte["p"];
+
+      var element = document.getElementsByTagName("span")[0];
+      element.innerHTML = texte["span"];
+    </script>
+  </body>
+</html>

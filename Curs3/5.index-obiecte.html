@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Obiect cu proprietati</h1>
+
+    <script>
+      var obiect = {
+        culoare: "green",
+        background: "black",
+        border: "red",
+        style : "solid",
+        bwidth : "1px"
+      };
+
+      var list_h1 = document.getElementsByTagName("h1");
+      var primul_h1 = list_h1[0];
+      console.log(primul_h1);
+
+      primul_h1.style.color = obiect["culoare"];
+      primul_h1.style.backgroundColor = obiect["background"];
+      primul_h1.style.borderColor = obiect["border"];
+      primul_h1.style.borderWidth = obiect["bwidth"];
+      primul_h1.style.borderStyle =  obiect["style"];
+    </script>
+  </body>
+</html>

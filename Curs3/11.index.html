@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Luati culoarea din style si plasati-o in text </h1>
+    <ol>
+        <li style="color:red">de schimbat</li>
+        <li style="color:green">de schimbat</li>
+        <li style="color:blue">de schimbat</li>
+    </ol>
+      
+    <script>
+     
+        for (let i = 0; i < 3; i++) {
+            var current_li = document.getElementsByTagName("li")[i]
+            current_li.innerHTML = current_li.style.color ;
+            
+        }
+     
+    </script>
+</body>
+</html>
