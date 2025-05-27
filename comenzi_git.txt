@@ -15,3 +15,8 @@ git push                                # trimitearea commit-ului pe server
 git --version                            # citeste versiunea de git actuala instalata
 git status                               # verifica statusul fisierelor (daca au fost modificate, adaugate altele noi, sterse)
 git log                                  # istoric al tuturor commit-urilor
+
+
+# comenzi de configurare
+git config --global user.name "Numele vostru"          # Intre ghilimele se seteaza numele user-ului
+git config --global user.email "email@vostru.com"      # Intre ghilimele se seteaza emailul user-ului
