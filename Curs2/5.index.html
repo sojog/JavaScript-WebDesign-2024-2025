@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Interschimbare a 3 elemente</h1>
+
+    <div>2. Suedia</div>
+    <div>3. Finlanda</div>
+    <div>1. Norvegia</div>
+
+
+   <script>
+    var div_list = document.getElementsByTagName("div")
+
+    var aux = div_list[2].innerHTML
+    div_list[2].innerHTML = div_list[1].innerHTML
+    div_list[1].innerHTML = div_list[0].innerHTML
+    div_list[0].innerHTML = aux
+
+
+
+   </script>
+
+
+</body>
+</html>

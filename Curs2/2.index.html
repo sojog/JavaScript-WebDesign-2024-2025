@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1> Lunile anului  </h1>
+
+    <ol>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+
+    <script>
+        var luni = ["Ianuarie", "Februarie", "Martie", "Aprilie", "Mai", "Iunie", "Iulie", "August", "Septembrie", "Octombrie", "Noiembrie", "Decembrie"]
+
+        var li_list = document.getElementsByTagName("li")
+        for (let i = 0; i < li_list.length; i++) {
+            li_list[i].innerHTML = luni[i];
+            li_list[i].style.color = "blue";
+
+        }
+        for (let i = 4; i < 9; i++) {
+            li_list[i].style.color = "red";
+            
+        }
+    
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1> Numar par sau impar </h1>
+    <input type="text" value="2243" name="temperatura" onchange="verifica_paritatea()">
+    <button ondblclick="verifica_paritatea() "> Verifica</button>
+
+    <script>
+        var input = document.getElementsByName("temperatura")[0]
+        var h1    = document.getElementsByTagName("h1")[0]
+
+        function verifica_paritatea() {
+            console.log(input.value)
+            if (input.value % 2 == 0) {
+                console.log("valoare para")
+                h1.innerHTML = "Numarul este par"
+            } else {
+                console.log("valoare impara")
+                h1.innerHTML = "Numarul este impar"
+            }
+        }
+        verifica_paritatea() 
+      
+    </script>
+</body>
+</html>

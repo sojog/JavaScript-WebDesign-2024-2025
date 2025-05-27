@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Primul nostru JS</h1>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
+    <script>
+      var titlu_nou = "Primul JS dupa Paste";
+      var h1_list = document.getElementsByTagName("h1");
+      console.log(h1_list);
+
+      var elementul_h1 = h1_list[0];
+      elementul_h1.innerHTML = titlu_nou;
+
+      var lista = [
+        "Luni",
+        "Marti",
+        "Miercuri",
+        "Joi",
+        "Vineri",
+        "Sambata",
+        "Duminica",
+      ];
+
+      var li_list = document.getElementsByTagName("li");
+    //   li_list[0].innerHTML = lista[0];
+    //   li_list[1].innerHTML = lista[1];
+    //   li_list[2].innerHTML = lista[2];
+
+      for (let i = 0; i < li_list.length; i++) {
+        const element = li_list[i];
+        element.innerHTML = lista[i];
+        // console.log("i=", i);
+        // console.log("element=", element)
+      }
+    </script>
+  </body>
+</html>

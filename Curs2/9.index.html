@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Valoarea mai mare</h1>
+    <input
+      type="text"
+      name=""
+      id=""
+      placeholder="Primul nr"
+      onchange="compara_numerele()"
+    />
+    <input
+      type="text"
+      name=""
+      id=""
+      placeholder="Al doilea nr"
+      onchange="compara_numerele ()"
+    />
+
+    <script>
+      var h1 = document.getElementsByTagName("h1")[0];
+      var input_list = document.getElementsByTagName("input");
+      var primul_input = input_list[0];
+      var al_doilea_input = input_list[1];
+
+      // Astfel incat sa aleaga cel mai mare dintre numere
+      function compara_numerele() {
+        if (Number(primul_input.value) > Number(al_doilea_input.value)) {
+            h1.innerHTML = primul_input.value
+        } else {
+            h1.innerHTML = al_doilea_input.value
+        }
+        
+          ;
+      }
+    </script>
+  </body>
+</html>

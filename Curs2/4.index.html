@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Interschimba elementele</h1>
+    <p> Margele</p>
+    <p> Prune</p>
+
+   <script>
+    var p_list = document.getElementsByTagName("p")
+
+    var aux = p_list[0].innerHTML;
+    p_list[0].innerHTML = p_list[1].innerHTML;
+    p_list[1].innerHTML = aux;
+
+   </script>
+
+
+</body>
+</html>

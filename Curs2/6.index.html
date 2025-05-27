@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Interschimbare a 3 elemente</h1>
+
+    <div>2. Suedia</div>
+    <div>3. Finlanda</div>
+    <div>4. Danemarca</div>
+    <div>5. Islanda</div>
+    <div>6. Insulele Feroe</div>
+    <div>7. Italia</div>
+    <div>1. Norvegia</div>
+
+
+   <script>
+    var div_list = document.getElementsByTagName("div")
+
+    var index_ultim = div_list.length - 1
+
+    var aux = div_list[index_ultim].innerHTML
+
+    for (let i = index_ultim; i > 0; i--) {
+        div_list[i].innerHTML = div_list[i - 1].innerHTML      
+    }
+    div_list[0].innerHTML = aux;
+
+
+
+   </script>
+
+
+</body>
+</html>

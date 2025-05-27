@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Todo list</h1>
+    <input type="text" name="" id="" onchange="verifica_disponibilitate ()"/>
+    <button onclick="adauga_element()">Adauga</button>
+    <ol></ol>
+
+    <script>
+      var input = document.getElementsByTagName("input")[0];
+      var button = document.getElementsByTagName("button")[0];
+      var ol = document.getElementsByTagName("ol")[0];
+
+      function adauga_element() {
+        if (input.value.length > 2) {
+          var new_li = document.createElement("li");
+          new_li.innerHTML = input.value;
+          ol.appendChild(new_li);
+          input.value = "";
+        } else {
+            input.style.borderColor = "red";
+        }
+      }
+      function verifica_disponibilitate () {
+        if (input.value.length > 2)  {
+            input.style.borderColor = "gray";
+        }
+      }
+    </script>
+  </body>
+</html>
