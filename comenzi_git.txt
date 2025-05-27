@@ -2,3 +2,10 @@
 # navigare
 pwd                           # print working directory
 ls                            # list - listeaza fisierele din folderul curent
+
+
+# pentru a face un commit
+# un COMMIT este o noua varianta 
+git add nume_fisier                     # adaugarea unui fisier in commit
+git commit -m "Aici va fi un mesaj"     # adaugarea unui mesaj pentru commit-ul respectiv
+git push                                # trimitearea commit-ului pe server
